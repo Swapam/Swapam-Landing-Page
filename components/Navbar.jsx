@@ -1,4 +1,5 @@
 "use client";
+import { navLinks } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -50,19 +51,17 @@ const Navbar = () => {
 
       {/* Mobile Navigation Links */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-[8%] right-0 left-[75%] bg-white flex justify-center transition duration-300 ease-in-out">
-          <div className="">
-            {navLinks.map((link, index) => (
-              <Link key={index} href={link.href}>
-                <p
-                  className=" whitespace-nowrap text-black py-2 px-5 text-center hover:text-accent transition duration-300 ease-in-out"
-                  onClick={toggleMobileMenu}
-                >
-                  {link.text}
-                </p>
-              </Link>
-            ))}
-          </div>
+        <div className="lg:hidden absolute top-16 right-0 left-0 bg-white transition duration-300 ease-in-out">
+          {navLinks.map((link, index) => (
+            <Link key={index} href={link.href}>
+              <p
+                className="block text-black text-sm lg:text-base py-2 px-4 text-center hover:text-accent transition duration-300 ease-in-out"
+                onClick={toggleMobileMenu}
+              >
+                {link.text}
+              </p>
+            </Link>
+          ))}
         </div>
       )}
     </nav>
@@ -70,10 +69,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-const navLinks = [
-  { text: "Home", href: "/" },
-  { text: "Product", href: "/product" },
-  { text: "Help", href: "/help" },
-  { text: "Contact Us", href: "/contact" },
-];

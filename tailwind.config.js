@@ -16,6 +16,7 @@ module.exports = {
         white: "#FEFEFE",
         accent: "#5CD2C6",
         darkBlue: "#363753",
+        lightPurple: "#6D6EA5",
       },
     },
   },
