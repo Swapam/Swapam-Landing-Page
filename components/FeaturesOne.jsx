@@ -50,7 +50,7 @@ const FeaturesOne = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen flex flex-col justify-center items-center py-10 px-0 lg:px-[10%] transition duration-300 ease-in-out">
+    <div className="bg-white min-h-screen flex flex-col justify-center items-center py-10 lg:py-20 px-0 lg:px-[10%] transition duration-300 ease-in-out">
       <h2 className="text-center text-black py-16 text-2xl md:text-3xl xl:text-3xl font-semibold">
         Where Digital Dreams Meet <br />
         Decentralized Deals!
