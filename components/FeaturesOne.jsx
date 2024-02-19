@@ -50,12 +50,12 @@ const FeaturesOne = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen flex flex-col justify-center items-center py-10 lg:py-20 px-0 lg:px-[10%] transition duration-300 ease-in-out">
-      <h2 className="text-center text-black py-16 text-2xl md:text-3xl xl:text-3xl font-semibold">
+    <div className="bg-white min-h-screen flex flex-col px-[10%] lg:px-0 justify-start lg:justify-center items-start lg:items-center py-10 lg:py-20  transition duration-300 ease-in-out">
+      <h2 className="text-left lg:text-center text-black py-16 text-xl md:text-3xl lg:text-4xl font-semibold">
         Where Digital Dreams Meet <br />
         Decentralized Deals!
       </h2>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-3 place-items-center px-[10%] lg:px-0 lg:pl-6 py-8 lg:pb-0 gap-6 transition duration-300 ease-in-out">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-3 place-items-center lg:pl-6 py-8 lg:pb-0 gap-6 transition duration-300 ease-in-out">
         {FeaturesOneData?.map((item, index) => (
           <RenderItem item={item} index={index} key={index} />
         ))}
