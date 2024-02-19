@@ -44,3 +44,21 @@ export const FeaturesOneData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do.",
   },
 ];
+
+export const FeaturesTwoData = [
+  {
+    title: "Trade Your Assets",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+  },
+  {
+    title: "Diverse Wallets",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+  },
+  {
+    title: "Swap And Convert",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+  },
+];

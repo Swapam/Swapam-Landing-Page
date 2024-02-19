@@ -20,6 +20,7 @@ module.exports = {
         lightGray: "#f0f2f9",
         lightGreen: "#8cc6c5",
         lightGrayText: "#353535",
+        lightOrange: "#ee7d2b",
       },
     },
   },
