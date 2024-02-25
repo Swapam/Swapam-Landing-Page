@@ -62,3 +62,24 @@ export const FeaturesTwoData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
   },
 ];
+
+export const FeaturesThreeData = [
+  {
+    title: "Buy Airtime And Data Subscription",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam,",
+    index: "1",
+  },
+  {
+    title: "Sort out all utilities",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam,",
+    index: "2",
+  },
+  {
+    title: "Fund betting accounts",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, ",
+    index: "3",
+  },
+];

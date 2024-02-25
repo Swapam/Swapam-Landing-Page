@@ -48,19 +48,19 @@ const FeaturesTwo = () => {
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 place-items-center transition duration-300 ease-in-out">
         <div className="order-last lg:order-first mt-12 lg:mt-0">
-          <div className="relative w-full flex items-center justify-center">
+          <div className="relative w-full flex items-center justify-center ">
             {/* First image */}
             <img
               src="/FeaturesTwo/Mockup1.png"
               alt="First Image"
-              className="w-1/2 md:w-1/2 lg:w-[80%] h-auto mr-[10%]"
+              className="w-1/2 md:w-1/2 lg:w-1/2 xl:w-[80%] h-auto mr-[10%] "
             />
 
             {/* Second image at the bottom right */}
             <img
               src="/FeaturesTwo/Mockup2.png"
               alt="Second Image"
-              className="absolute bottom-0 right-[10%] md:right-[10%] lg:right-[-20%] top-[37%] w-1/2 md:w-1/2 lg:w-[80%] h-auto"
+              className="absolute bottom-0 right-[10%] md:right-[10%] lg:right-[10%] xl:right-[-20%] top-[30%] w-1/2 md:w-1/2 lg:w-1/2 xl:w-[80%] h-auto"
             />
           </div>
           <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center mt-40 md:mt-[45%] lg:mt-[28%]">

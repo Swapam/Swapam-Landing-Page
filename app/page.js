@@ -1,4 +1,5 @@
 import FeaturesOne from "@/components/FeaturesOne";
+import FeaturesThree from "@/components/FeaturesThree";
 import FeaturesTwo from "@/components/FeaturesTwo";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <FeaturesOne />
       <FeaturesTwo />
+      <FeaturesThree />
     </main>
   );
 }
