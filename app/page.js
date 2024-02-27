@@ -3,7 +3,7 @@ import FeaturesThree from "@/components/FeaturesThree";
 import FeaturesTwo from "@/components/FeaturesTwo";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
+import Card from "@/components/shared/Card";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <FeaturesOne />
       <FeaturesTwo />
       <FeaturesThree />
+      <Card />
     </main>
   );
 }
