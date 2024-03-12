@@ -83,3 +83,66 @@ export const FeaturesThreeData = [
     index: "3",
   },
 ];
+
+export const ReviewsData = [
+  {
+    customer: {
+      name: "Precious Ubani",
+      position: "CEO, P-Empire",
+    },
+    rating: 5,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
+    contact: {
+      twitter: "precious_ubaniceo",
+    },
+  },
+  {
+    customer: {
+      name: "James Efinan",
+      position: "CEO, RX-Ventures",
+    },
+    rating: 5,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
+    contact: {
+      twitter: "james_rxv",
+    },
+  },
+  {
+    customer: {
+      name: "Nora Uwakwe",
+      position: "CEO, Road Inc.",
+    },
+    rating: 5,
+    comment:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
+    contact: {
+      twitter: "hlo_nora",
+    },
+  },
+];
+
+export const FAQData = [
+  {
+    question: "How to make withdrawals on Swapam",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
+  },
+  {
+    question: "How to make Deposits on Swapam",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
+  },
+  {
+    question: "How to swap coins on Swapam?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
+  },
+  {
+    question: "How to get my wallet address",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
+  },
+  // Add more FAQ items as needed
+];

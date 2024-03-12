@@ -12,14 +12,14 @@ const Card = ({ imageUrl, title, description }) => {
         className={`object-contain w-full h-auto`}
       />
       <div className="absolute inset-0 flex flex-row justify-between items-center text-white">
-        <div className="w-[65%] p-8 md:p-16 lg:p-24 xl:p-32">
-          <h2 className="text-lg md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-1 md:mb-4">
-            Don’t get stuck; swap, convert with ease!
+        <div className="w-[70%] md:w-[65%] p-8 md:p-16 lg:p-24 xl:p-32">
+          <h2 className="text-base md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-0 md:mb-4">
+            Don’t get stuck; swap, <br />
+            convert with ease!
           </h2>
-          <p className="text-xs md:text-base lg:text-lg xl:text-xl">
+          <p className="text-[10px] md:text-base lg:text-lg xl:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis
-            nostrud exercitation ullamco.
+            eiusmod tempor incididunt ut laboreUt enim ad minim veniam
           </p>
         </div>
 
