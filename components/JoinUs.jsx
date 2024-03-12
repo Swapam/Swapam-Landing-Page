@@ -23,7 +23,7 @@ const JoinUs = ({ imageUrl, title, description }) => {
             eiusmod tempor incididunt
           </p>
 
-          <div className="flex items-center justify-center gap-5 my-2 md:my-6">
+          <div className="flex items-center justify-center gap-2 my-2 md:my-6">
             <MdOutlineContentCopy className="text-accent" size={16} />
 
             <a
@@ -34,12 +34,12 @@ const JoinUs = ({ imageUrl, title, description }) => {
             </a>
           </div>
 
-          <div className="flex w-full justify-center">
-            <Button
-              title="Join Us"
-              className={`bg-accent py-0 md:py-1 lg:py-2 px-2 md:px-10`}
-              textClassName={`text-[9px] md:text-sm`}
-            />
+          <div className="w-full flex justify-center">
+            <div className="flex w-1/3 justify-center items-center py-1 md:py-2 lg:py-3 px-6 md:px-10 bg-accent rounded-full">
+              <p className="text-[10px] md:text-sm whitespace-nowrap">
+                Join Us
+              </p>
+            </div>
           </div>
         </div>
       </div>
