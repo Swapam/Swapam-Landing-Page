@@ -146,3 +146,31 @@ export const FAQData = [
   },
   // Add more FAQ items as needed
 ];
+
+export const FooterData = [
+  {
+    title: "Company",
+    links: [
+      { name: "Home", url: "/" },
+      { name: "About Us", url: "/" },
+      { name: "Products", url: "/" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { name: "FAQs", url: "/faq" },
+      { name: "Help Center", url: "/" },
+      { name: "Call Centers", url: "/" },
+    ],
+  },
+  {
+    title: "Socials",
+    links: [
+      { name: "Instagram", url: "/faq" },
+      { name: "Twitter", url: "/" },
+      { name: "Telegram", url: "/" },
+      { name: "Whatsapp", url: "/" },
+    ],
+  },
+];
