@@ -65,14 +65,14 @@ const Hero = () => {
           />
         </div>
         <Image
-          src="/hero.png"
+          src="/hero.svg"
           alt="Hero Image"
-          width={"750"}
-          height={"850"}
-          className={`object-cover lg:object-contain z-10`}
+          width={650}
+          height={650}
+          className={`mt-auto object-cover lg:object-contain z-10`}
         />
 
-        <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center">
+        <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center mt-10">
           <div className="w-full flex items-center justify-center gap-3">
             <Button
               title="App Store"
