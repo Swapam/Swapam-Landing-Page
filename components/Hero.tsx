@@ -6,8 +6,16 @@ import Container from "./shared/ui/Container";
 
 const Hero = () => {
   return (
-    <div className="bg-darkBlue min-h-screen grid grid-cols-1 lg:grid-cols-2 justify-between pl-2 lg:pl-6 pb-8 lg:pb-0">
-      <Container>
+    <div className="bg-darkBlue min-h-screen grid grid-cols-1 lg:grid-cols-2 justify-between pl-2 lg:pl-6 pb-8 lg:pb-0 relative">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero-bg.svg"
+          alt="Hero Image Background"
+          layout="fill" // Ensures the image covers the container
+          className="object-cover"
+        />
+      </div>
+      <Container className="z-10">
         {" "}
         <div className="px-2 md:px-12 py-5">
           <div className="mt-[10%] mb-[7%]">
@@ -19,7 +27,7 @@ const Hero = () => {
               </h1>
             </div>
 
-            <span className="text-white text-sm font-light">
+            <span className="text-white text-sm md:text-base font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor Incididunt ut labore Ut enim ad minim veniam, quis
               nostrud exercitation ullamco laboris nisi ut aliquip
@@ -58,23 +66,16 @@ const Hero = () => {
         </div>
       </Container>
 
-      <Container className="flex flex-col justify-center relative">
-        <div className="absolute top-[-20%] left-[5%] mt-0 xs:mt-10 md:mt-20 lg:mt-0 z-0">
+      <div className="flex flex-col justify-center z-10">
+        <Container delay={0.3} className="">
           <Image
-            src="/hero-bg.png"
-            alt="Hero Image Background"
-            width={"600"}
-            height={"750"}
-            className={`object-cover lg:object-contain`}
+            src="/hero.svg"
+            alt="Hero Image"
+            width={650}
+            height={650}
+            className={`mt-10 lg:mt-0 object-cover lg:object-contain `}
           />
-        </div>
-        <Image
-          src="/hero.svg"
-          alt="Hero Image"
-          width={650}
-          height={650}
-          className={`mt-auto object-cover lg:object-contain z-10`}
-        />
+        </Container>
 
         <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center mt-10">
           <div className="w-full flex items-center justify-center gap-3">
@@ -106,7 +107,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
