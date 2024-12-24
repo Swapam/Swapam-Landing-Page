@@ -2,6 +2,7 @@
 import { FAQData } from "@/data";
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import Container from "./shared/ui/Container";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -32,7 +33,7 @@ const FAQ = () => {
         </div>
       </div>
 
-      <div className="w-full mx-auto my-8">
+      <Container className="w-full mx-auto my-8">
         {FAQData.map((faq, index) => (
           <div key={index} className="mb-4 border-b">
             <div
@@ -58,7 +59,7 @@ const FAQ = () => {
             )}
           </div>
         ))}
-      </div>
+      </Container>
     </div>
   );
 };

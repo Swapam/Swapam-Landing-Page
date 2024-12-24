@@ -5,7 +5,6 @@ import FeaturesThree from "@/components/FeaturesThree";
 import FeaturesTwo from "@/components/FeaturesTwo";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import JoinUs from "@/components/JoinUs";
 import Navbar from "@/components/Navbar";
 import Card from "@/components/shared/Card";
 
@@ -20,7 +19,7 @@ export default function Home() {
       <Card />
       <CustomerReviews />
       <FAQ />
-      <JoinUs />
+      {/* <JoinUs /> */}
       <Footer />
     </main>
   );
