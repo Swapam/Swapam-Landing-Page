@@ -12,7 +12,7 @@ const Card = ({ imageUrl, title, description }: ButtonProps) => {
   return (
     <div className="relative bg-white flex items-center justify-center px-0 md:px-5">
       <Image
-        src="/cardBg.png"
+        src="/cardBg.svg"
         alt="Card Background"
         width={"600"}
         height={"750"}
