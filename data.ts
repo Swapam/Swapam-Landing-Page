@@ -190,5 +190,7 @@ export const socialMediaFooterLinks: ISocialMediaFooter = {
     { name: "Twitter", url: "/" },
     { name: "Telegram", url: "/" },
     { name: "Whatsapp", url: "/" },
+    { name: "LinkedIn", url: "/" },
+    { name: "TikTok", url: "/" },
   ],
 };

@@ -2,12 +2,38 @@ import Image from "next/image";
 import React from "react";
 import Button from "./shared/Button";
 import { FooterData, socialMediaFooterLinks } from "@/data";
+import Container from "./shared/ui/Container";
+import Instagram from "./icons/Instagram";
+import Twitter from "./icons/Twitter";
+import Telegram from "./icons/Telegram";
+import WhatsApp from "./icons/Whatsapp";
+import Linkedin from "./icons/Linkedin";
+import TikTok from "./icons/TikTok";
 
 const Footer = () => {
+  const getSocialIcon = (name: string) => {
+    switch (name.toLowerCase()) {
+      case "instagram":
+        return <Instagram className="w-8 h-8 lg:w-10 lg:h-8" />;
+      case "twitter":
+        return <Twitter className="w-8 h-8 lg:w-10 lg:h-8" />;
+      case "telegram":
+        return <Telegram className="w-8 h-8 lg:w-10 lg:h-8" />;
+      case "whatsapp":
+        return <WhatsApp className="w-8 h-8 lg:w-10 lg:h-8" />;
+      case "linkedin":
+        return <Linkedin className="w-8 h-8 lg:w-10 lg:h-8" />;
+      case "tiktok":
+        return <TikTok className="w-8 h-8 lg:w-10 lg:h-8" />;
+      default:
+        return null; // Default case if no match is found
+    }
+  };
+
   return (
     <div id="footer" className="w-full">
       <div className="bg-darkBlue flex flex-col lg:flex-row items-center px-6 md:px-[5%] lg:px-0 py-16 gap-7 ">
-        <div className="px-0 lg:px-[5%]">
+        <Container className="px-0 lg:px-[5%]">
           <div className="flex items-center space-x-1 -ml-2">
             <Image
               src="/logo.png"
@@ -47,10 +73,13 @@ const Footer = () => {
               }
             />
           </div>
-        </div>
-        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-7 ">
+        </Container>
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-7 pr-3 lg:pr-7">
           {FooterData.map((item, index) => (
-            <div className="w-full items-center justify-center" key={index}>
+            <Container
+              className="w-full items-center justify-center"
+              key={index}
+            >
               <span className="font-semibold text-sm md:text-base">
                 {item.title}
               </span>
@@ -65,25 +94,28 @@ const Footer = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </Container>
           ))}
 
-          <div className="w-full items-center justify-center">
+          <Container className="w-full  items-center justify-center">
             <span className="font-semibold text-sm md:text-base">
               {socialMediaFooterLinks.title}
             </span>
 
-            <div className="flex flex-col mt-4 md:mt-7 gap-7">
-              {socialMediaFooterLinks.links.map((link) => (
+            <div className="flex flex-wrap items-center mt-4 md:mt-7 gap-7">
+              {socialMediaFooterLinks.links.map((link, index) => (
                 <a
-                  className="text-white hover:text-teal-500 text-xs md:text-sm font-normal"
+                  key={index}
+                  className="flex items-center gap-3 text-white hover:text-teal-500 text-xs md:text-sm font-normal"
                   href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {link.name}
+                  {getSocialIcon(link.name)}
                 </a>
               ))}
             </div>
-          </div>
+          </Container>
         </div>
       </div>
 
