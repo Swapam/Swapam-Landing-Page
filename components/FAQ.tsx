@@ -6,7 +6,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const toggleDropdown = (index) => {
+  const toggleDropdown = (index: any) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
@@ -25,7 +25,7 @@ const FAQ = () => {
           <h2 className="text-black text-2xl md:text-3xl xl:text-3xl font-semibold">
             Value For Every Asset!
           </h2>
-          <span className={`text-xs  text-lightGrayText`}>
+          <span className={`text-sm md:text-base  text-lightGrayText`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor Incididunt ut labore Ut enim ad minim veniam.
           </span>

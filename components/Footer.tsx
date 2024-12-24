@@ -1,13 +1,13 @@
-import { FooterData, socialMediaFooterLinks } from "@/data";
 import Image from "next/image";
 import React from "react";
 import Button from "./shared/Button";
+import { FooterData, socialMediaFooterLinks } from "@/data";
 
 const Footer = () => {
   return (
     <div id="footer" className="w-full">
-      <div className="bg-darkBlue flex flex-col lg:flex-row items-center px-6 md:px-[5%] py-16 gap-7 ">
-        <div className="px-0 lg:px-[10%]">
+      <div className="bg-darkBlue flex flex-col lg:flex-row items-center px-6 md:px-[5%] lg:px-0 py-16 gap-7 ">
+        <div className="px-0 lg:px-[5%]">
           <div className="flex items-center space-x-1 -ml-2">
             <Image
               src="/logo.png"
@@ -49,8 +49,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-7 ">
-          {FooterData.map((item) => (
-            <div className="w-full items-center justify-center" key={item}>
+          {FooterData.map((item, index) => (
+            <div className="w-full items-center justify-center" key={index}>
               <span className="font-semibold text-sm md:text-base">
                 {item.title}
               </span>
@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="flex flex-col mt-4 md:mt-7 gap-7">
                 {item.links.map((link) => (
                   <a
-                    className="text-white text-xs md:text-sm font-normal"
+                    className="text-white hover:text-teal-500 text-xs md:text-sm font-normal"
                     href={link.url}
                   >
                     {link.name}
@@ -76,7 +76,7 @@ const Footer = () => {
             <div className="flex flex-col mt-4 md:mt-7 gap-7">
               {socialMediaFooterLinks.links.map((link) => (
                 <a
-                  className="text-white text-xs md:text-sm font-normal"
+                  className="text-white hover:text-teal-500 text-xs md:text-sm font-normal"
                   href={link.url}
                 >
                   {link.name}

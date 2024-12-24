@@ -1,3 +1,13 @@
+import {
+  IFAQ,
+  IFeatureOne,
+  IFeatureThree,
+  IFeatureTwo,
+  IFooterSection,
+  IReview,
+  ISocialMediaFooter,
+} from "./types";
+
 export const navLinks = [
   { text: "Home", href: "/" },
   { text: "Product", href: "/#product" },
@@ -11,7 +21,8 @@ export const statsData = [
   { title: "88k+", subtitle: "active users" },
 ];
 
-export const FeaturesOneData = [
+// FeaturesOneData Type
+export const FeaturesOneData: IFeatureOne[] = [
   {
     image: "/FeaturesOne/1.png",
     title: "Swift Payments",
@@ -45,7 +56,8 @@ export const FeaturesOneData = [
   },
 ];
 
-export const FeaturesTwoData = [
+// FeaturesTwoData Type
+export const FeaturesTwoData: IFeatureTwo[] = [
   {
     title: "Trade Your Assets",
     subtitle:
@@ -63,7 +75,8 @@ export const FeaturesTwoData = [
   },
 ];
 
-export const FeaturesThreeData = [
+// FeaturesThreeData Type
+export const FeaturesThreeData: IFeatureThree[] = [
   {
     title: "Buy Airtime And Data Subscription",
     subtitle:
@@ -84,7 +97,8 @@ export const FeaturesThreeData = [
   },
 ];
 
-export const ReviewsData = [
+// ReviewsData Type
+export const ReviewsData: IReview[] = [
   {
     customer: {
       name: "Precious Ubani",
@@ -123,7 +137,8 @@ export const ReviewsData = [
   },
 ];
 
-export const FAQData = [
+// FAQData Type
+export const FAQData: IFAQ[] = [
   {
     question: "How to make withdrawals on Swapam",
     answer:
@@ -144,10 +159,10 @@ export const FAQData = [
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreUt enim ad minim veniam, quis nostrud exercitation ullamco.",
   },
-  // Add more FAQ items as needed
 ];
 
-export const FooterData = [
+// FooterData Type
+export const FooterData: IFooterSection[] = [
   {
     title: "Company",
     links: [
@@ -167,7 +182,8 @@ export const FooterData = [
   },
 ];
 
-export const socialMediaFooterLinks = {
+// SocialMediaFooterLinks Type
+export const socialMediaFooterLinks: ISocialMediaFooter = {
   title: "Socials",
   links: [
     { name: "Instagram", url: "/" },

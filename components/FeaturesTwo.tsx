@@ -1,9 +1,17 @@
 import React from "react";
 import Button from "./shared/Button";
 import { FeaturesTwoData } from "@/data";
+import { IFeatureTwo } from "../types";
+import Container from "./shared/ui/Container";
 
 const FeaturesTwo = () => {
-  const RenderItem = ({ item, index }) => {
+  const RenderItem = ({
+    item,
+    index,
+  }: {
+    item: IFeatureTwo;
+    index: number;
+  }) => {
     return (
       <div
         className={`flex items-center justify-center lg:justify-start py-2 gap-4`}
@@ -17,7 +25,7 @@ const FeaturesTwo = () => {
           <h2 className="text-left text-black text-lg md:text-xl font-semibold">
             {item?.title}
           </h2>
-          <span className={`text-xs text-left text-lightGrayText`}>
+          <span className={`text-xs md:text-sm text-left text-lightGrayText`}>
             {item.subtitle}
           </span>
         </div>
@@ -34,19 +42,19 @@ const FeaturesTwo = () => {
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="py-10 px-[5%] lg:px-[10%]">
+      <Container className="py-10 px-[5%] lg:px-[10%]">
         <div className="w-[80%] md:w-[60%] lg:w-[40%] flex flex-col gap-3">
           <h2 className="text-left text-black text-2xl md:text-3xl xl:text-3xl font-semibold">
             Value For Every Asset!
           </h2>
-          <span className={`text-xs text-left text-lightGrayText`}>
+          <span className={`text-sm md:text-base text-left text-lightGrayText`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor Incididunt ut labore Ut enim ad minim veniam.
           </span>
         </div>
-      </div>
+      </Container>
 
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 place-items-center transition duration-300 ease-in-out">
+      <Container className="w-full grid grid-cols-1 lg:grid-cols-2 place-items-center transition duration-300 ease-in-out">
         <div className="order-last lg:order-first mt-12 lg:mt-0">
           <div className="relative w-full flex items-center justify-center ">
             {/* First image */}
@@ -79,7 +87,7 @@ const FeaturesTwo = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center h-full w-full gap-4 px-5 mt-10 lg:mt-0">
+        <Container className="flex flex-col justify-center items-center h-full w-full gap-4 px-5 mt-10 lg:mt-0">
           {FeaturesTwoData.map((item, index) => (
             <RenderItem item={item} index={index} key={index} />
           ))}
@@ -98,8 +106,8 @@ const FeaturesTwo = () => {
               />
             </div>
           </div>
-        </div>
-      </div>
+        </Container>
+      </Container>
     </div>
   );
 };

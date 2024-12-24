@@ -1,9 +1,10 @@
 "use client";
-import { ReviewsData } from "@/data";
-import Image from "next/image";
 import React, { useState } from "react";
 import { RxQuote } from "react-icons/rx";
 import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
+import { IReview } from "../types";
+import { ReviewsData } from "@/data";
+import Container from "./shared/ui/Container";
 
 const CustomerReviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,7 +18,7 @@ const CustomerReviews = () => {
       prevIndex === 0 ? ReviewsData.length - 1 : prevIndex - 1
     );
   };
-  const ReviewItem = ({ item }) => {
+  const ReviewItem = ({ item }: { item: IReview }) => {
     return (
       <div className="w-full drop-shadow-lg">
         <div className="p-2  md:px-10 rounded-t-xl flex flex-row w-full justify-between bg-lightGray">
@@ -49,7 +50,7 @@ const CustomerReviews = () => {
         <h2 className=" text-black text-2xl md:text-3xl xl:text-3xl font-semibold">
           Satisfied Customers Streaks
         </h2>
-        <span className={`text-xs text-lightGrayText`}>
+        <span className={`text-sm md:text-base text-lightGrayText`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor Incididunt ut labore Ut enim ad minim veniam,
         </span>

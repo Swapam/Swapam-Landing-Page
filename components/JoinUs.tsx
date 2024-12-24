@@ -1,9 +1,15 @@
 "use client";
 import Image from "next/image";
 import { MdOutlineContentCopy } from "react-icons/md";
-import Button from "./shared/Button";
 
-const JoinUs = ({ imageUrl, title, description }) => {
+interface JoinUsProps {
+  imageUrl?: string; // Optional background image URL
+  title?: string; // Optional title
+  description?: string; // Optional description
+  telegramLink?: string; // Telegram link
+}
+
+const JoinUs = ({ imageUrl, title, description }: JoinUsProps) => {
   return (
     <div className="relative bg-white drop-shadow-lg flex items-center justify-center px-0 md:px-5 py-[5%]">
       <Image

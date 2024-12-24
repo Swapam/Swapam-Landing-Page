@@ -1,12 +1,35 @@
-import { FeaturesOneData } from "@/data";
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { IFeatureOne } from "../types";
+import { FeaturesOneData } from "@/data";
+import Container from "./shared/ui/Container";
 
 const FeaturesOne = () => {
-  const isMobile = () => window.innerWidth < 768;
-  const RenderItem = ({ item, index }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if the window object exists and set the state
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+
+    // Set the initial value
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const RenderItem = ({
+    item,
+    index,
+  }: {
+    item: IFeatureOne;
+    index: number;
+  }) => {
     return (
-      <div
+      <Container
         className={`${
           item?.bg ? `bg-accent` : "bg-white"
         } rounded-xl py-6 px-4 pt-10 drop-shadow-md max-w-[250px] md:max-w-[310px] lg:max-w-[350px] ${
@@ -45,7 +68,7 @@ const FeaturesOne = () => {
             {item.subtitle}
           </span>
         </div>
-      </div>
+      </Container>
     );
   };
 
@@ -58,11 +81,11 @@ const FeaturesOne = () => {
         Where Digital Dreams Meet <br />
         Decentralized Deals!
       </h2>
-      <div className="w-full grid grid-cols-1 lg:grid-cols-3 place-items-center lg:pl-6 py-8 lg:pb-0 gap-6 transition duration-300 ease-in-out">
+      <Container className="w-full grid grid-cols-1 lg:grid-cols-3 place-items-center lg:pl-6 py-8 lg:pb-0 gap-6 transition duration-300 ease-in-out">
         {FeaturesOneData?.map((item, index) => (
           <RenderItem item={item} index={index} key={index} />
         ))}
-      </div>
+      </Container>
     </div>
   );
 };

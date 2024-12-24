@@ -1,11 +1,19 @@
 import Image from "next/image";
 import React from "react";
 
-const Button = ({
+interface ButtonProps {
+  title?: string; // Optional string with a default value
+  onClick?: () => void; // Optional click handler function
+  className?: string; // Optional string for button styles
+  textClassName?: string; // Optional string for text styles
+  image?: string; // Optional string for the image source
+}
+
+const Button: React.FC<ButtonProps> = ({
   title = "Get Started",
   onClick,
-  className,
-  textClassName,
+  className = "",
+  textClassName = "",
   image,
 }) => {
   return (
@@ -18,9 +26,10 @@ const Button = ({
       {image ? (
         <Image
           src={image}
-          width={"25"}
-          height={"25"}
+          width={25}
+          height={25}
           className={"object-contain max-w-[25px]"}
+          alt={title} // Add alt for accessibility
         />
       ) : null}
       <span className={`text-sm whitespace-nowrap ${textClassName}`}>
