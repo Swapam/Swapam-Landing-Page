@@ -2,27 +2,41 @@
 import { navLinks } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+  const router = useRouter();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <nav className="bg-darkBlue border-b flex flex-row items-center justify-between py-4 px-7 lg:py-6 lg:px-10">
+    <nav className="bg-darkBlue border-b flex flex-row items-center justify-between py-4 px-4 lg:py-6 lg:px-10">
       <div className="flex flex-row items-center justify-between border-white">
-        <Image
-          src="/logo.png"
-          alt="Swapam Logo"
-          width={"100"}
-          height={"40"}
-          className={`object-contain h-10 w-24 md:w-32`}
-        />
-        <div className="hidden lg:flex flex-row items-center justify-between border-l border-white gap-7 p-2">
+        <div
+          className="flex items-center space-x-1 cursor-pointer"
+          onClick={() => router.push("/")}
+        >
+          <Image
+            src="/logo.png"
+            alt="Swapam Logo"
+            width={300}
+            height={300}
+            className={`object-contain h-12 w-12 md:w-16 md:h-16`}
+          />
+          <Image
+            src="/swapam.svg"
+            alt="Swapam Logo"
+            width={300}
+            height={300}
+            className={`hidden lg:block object-contain h-10 w-20 `}
+          />
+        </div>
+        <div className="hidden lg:flex flex-row items-center justify-between border-l border-white gap-7 p-2 ml-4">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.href}>
               <p className="text-white ml-4 text-sm text-center hover:text-accent transition duration-300 ease-in-out">

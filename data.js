@@ -1,8 +1,8 @@
 export const navLinks = [
   { text: "Home", href: "/" },
-  { text: "Product", href: "/product" },
-  { text: "Help", href: "/help" },
-  { text: "Contact Us", href: "/contact" },
+  { text: "Product", href: "/#product" },
+  { text: "Help", href: "/#faq" },
+  { text: "Contact Us", href: "/#footer" },
 ];
 
 export const statsData = [
@@ -152,25 +152,27 @@ export const FooterData = [
     title: "Company",
     links: [
       { name: "Home", url: "/" },
-      { name: "About Us", url: "/" },
-      { name: "Products", url: "/" },
+      { name: "About Us", url: "/#about" },
+      { name: "Products", url: "/#product" },
+      { name: "Terms of Service", url: "/terms-of-service" },
+      { name: "Privacy Policy", url: "/privacy-policy" },
     ],
   },
   {
     title: "Support",
     links: [
-      { name: "FAQs", url: "/faq" },
-      { name: "Help Center", url: "/" },
-      { name: "Call Centers", url: "/" },
-    ],
-  },
-  {
-    title: "Socials",
-    links: [
-      { name: "Instagram", url: "/faq" },
-      { name: "Twitter", url: "/" },
-      { name: "Telegram", url: "/" },
-      { name: "Whatsapp", url: "/" },
+      { name: "FAQs", url: "/#faq" },
+      { name: "Help Center", url: "/#faq" },
     ],
   },
 ];
+
+export const socialMediaFooterLinks = {
+  title: "Socials",
+  links: [
+    { name: "Instagram", url: "/" },
+    { name: "Twitter", url: "/" },
+    { name: "Telegram", url: "/" },
+    { name: "Whatsapp", url: "/" },
+  ],
+};

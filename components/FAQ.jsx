@@ -11,7 +11,10 @@ const FAQ = () => {
   };
 
   return (
-    <div className="bg-white flex flex-col items-center px-[5%] lg:px-[15%] py-[5%]">
+    <div
+      id="faq"
+      className="bg-white flex flex-col items-center px-[5%] lg:px-[15%] py-[5%]"
+    >
       <div className="flex flex-col lg:flex-row gap-3 items-center justify-center w-full">
         <img
           src="/faq.png"

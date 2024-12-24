@@ -51,7 +51,10 @@ const FeaturesThree = () => {
     );
   };
   return (
-    <div className="bg-white min-h-screen relative flex flex-col py-10 lg:py-20 gap-7 lg:gap-12 transition duration-300 ease-in-out">
+    <div
+      id="product"
+      className="bg-white min-h-screen relative flex flex-col py-10 lg:py-20 gap-7 lg:gap-12 transition duration-300 ease-in-out"
+    >
       {/* <div
         className="absolute z-0 h-full w-full"
         style={{
