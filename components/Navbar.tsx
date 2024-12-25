@@ -15,7 +15,7 @@ const Navbar = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <nav className="bg-darkBlue border-b flex flex-row items-center justify-between py-4 px-4 lg:py-6 lg:px-10">
+    <nav className="bg-darkBlue border-b-[0.5px] border-b-gray-500 flex flex-row items-center justify-between py-4 px-4 lg:py-4 lg:px-10">
       <div className="flex flex-row items-center justify-between border-white">
         <div
           className="flex items-center space-x-1 cursor-pointer"

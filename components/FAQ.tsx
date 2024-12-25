@@ -24,12 +24,16 @@ const FAQ = () => {
         />
         <div className="text-center lg:text-left px-[10%] lg:px-0">
           <h2 className="text-black text-2xl md:text-3xl xl:text-3xl font-semibold">
-            Value For Every Asset!
+            Got Questions? We've Got Answers!
           </h2>
-          <span className={`text-sm md:text-base  text-lightGrayText`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor Incididunt ut labore Ut enim ad minim veniam.
-          </span>
+          <div className="pr-0 lg:pr-[20%]">
+            <span
+              className={`text-sm md:text-base  text-lightGrayText text-wrap `}
+            >
+              Find everything you need to know about using Swapam. From deposits
+              to withdrawals, we're here to guide you.
+            </span>
+          </div>
         </div>
       </div>
 
@@ -40,8 +44,8 @@ const FAQ = () => {
               className="p-4 cursor-pointer"
               onClick={() => toggleDropdown(index)}
             >
-              <div className="flex w-full items-center justify-between ">
-                <p className="text-darkBlue text-sm md:text-base">
+              <div className="flex w-full items-center justify-between">
+                <p className="text-darkBlue text-base md:text-base font-medium">
                   {faq.question}
                 </p>
 
@@ -52,11 +56,17 @@ const FAQ = () => {
                 )}
               </div>
             </div>
-            {openIndex === index && (
-              <div className="bg-white p-4">
-                <p className="text-darkBlue text-xs md:text-sm">{faq.answer}</p>
-              </div>
-            )}
+            <div
+              className={`${
+                openIndex === index
+                  ? "max-h-[1000px] opacity-100 p-5"
+                  : "max-h-0 opacity-0"
+              } transition-all duration-500 ease-in-out bg-white overflow-hidden`}
+            >
+              <p className="text-darkBlue text-sm md:text-sm lg:text-base">
+                {faq.answer}
+              </p>
+            </div>
           </div>
         ))}
       </Container>

@@ -18,50 +18,51 @@ const Hero = () => {
       <Container className="z-10">
         {" "}
         <div className="px-2 md:px-12 py-5">
-          <div className="mt-[10%] mb-[7%]">
+          <div className="mt-[10%] mb-[7%] flex flex-col justify-center lg:justify-start">
             <div className="mb-3 xl:mb-7">
               <h1
-                className={`text-3xl md:text-4xl xl:text-5xl font-bold text-white`}
+                className={`text-center lg:text-left text-3xl md:text-5xl lg:text-5xl lg:leading-[56px] font-bold text-white`}
               >
-                Unleashing the Future of Finance, One Crypto at a Time!
+                Seamless Crypto-to-Fiat Transactions for Africa
               </h1>
             </div>
 
-            <span className="text-white text-sm md:text-base font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor Incididunt ut labore Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip
+            <span className="text-center lg:text-left text-white text-sm md:text-lg lg:text-lg font-light">
+              Unlock the easiest way to off-ramp your crypto into fiat with
+              instant access to virtual accounts, secure wallets, and a complete
+              suite of utilities. Whether it’s airtime, electricity, or betting
+              funds, we’ve got you covered.
             </span>
           </div>
           <div className="hidden lg:flex flex-col">
             <div className="w-full flex items-center justify-start gap-3">
               <Button
-                title="App Store"
+                title="Get on App Store"
                 className={"bg-lightPurple"}
                 image={"/apple.png"}
               />
               <Button
-                title="Play Store"
+                title="Get on Play Store"
                 image={"/playstore.png"}
                 className={"bg-lightPurple"}
               />
             </div>
 
-            <div className="mt-[10%] flex gap-5">
+            <Container delay={0.35} className="mt-[10%] flex gap-5">
               {statsData.map((stat, index) => (
                 <div
                   key={index}
                   className="flex flex-col items-center justify-center"
                 >
-                  <h3 className="capitalize text-white text-lg lg:text-xl">
+                  <h3 className="capitalize text-white text-lg lg:text-2xl">
                     {stat.title}
                   </h3>
-                  <span className="capitalize text-white text-sm">
+                  <span className="capitalize text-white text-sm lg:text-base">
                     {stat.subtitle}
                   </span>
                 </div>
               ))}
-            </div>
+            </Container>
           </div>
         </div>
       </Container>
@@ -80,12 +81,12 @@ const Hero = () => {
         <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center mt-10">
           <div className="w-full flex items-center justify-center gap-3">
             <Button
-              title="App Store"
+              title="Get on App Store"
               className={"bg-lightPurple"}
               image={"/apple.png"}
             />
             <Button
-              title="Play Store"
+              title="Get on Play Store"
               image={"/playstore.png"}
               className={"bg-lightPurple"}
             />

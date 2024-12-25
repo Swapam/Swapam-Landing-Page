@@ -78,8 +78,9 @@ const FeaturesOne = () => {
       className="bg-white min-h-screen flex flex-col px-[10%] justify-start lg:justify-center items-start lg:items-center py-10 lg:py-20  transition duration-300 ease-in-out"
     >
       <h2 className="text-left lg:text-center text-black py-16 text-xl md:text-3xl lg:text-4xl font-semibold">
-        Where Digital Dreams Meet <br />
-        Decentralized Deals!
+        Simplify Your Finances, Empower Your Lifestyle
+        <br />
+        With Seamless Crypto Solutions!
       </h2>
       <Container className="w-full grid grid-cols-1 lg:grid-cols-3 place-items-center lg:pl-6 py-8 lg:pb-0 gap-6 transition duration-300 ease-in-out">
         {FeaturesOneData?.map((item, index) => (

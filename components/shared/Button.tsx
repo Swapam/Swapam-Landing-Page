@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={`flex ${
         image ? "gap-2" : ""
-      } rounded-full px-5 py-2 ${className}`}
+      } rounded-full px-5 py-2.5 ${className}`}
       onClick={onClick}
     >
       {image ? (
@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
           alt={title} // Add alt for accessibility
         />
       ) : null}
-      <span className={`text-sm whitespace-nowrap ${textClassName}`}>
+      <span className={`text-sm whitespace-nowrap  ${textClassName}`}>
         {title}
       </span>
     </button>

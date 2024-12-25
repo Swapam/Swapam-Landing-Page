@@ -20,13 +20,12 @@ const Card = ({ imageUrl, title, description }: ButtonProps) => {
       />
       <Container className="absolute inset-0 flex flex-row justify-between items-center text-white">
         <div className="w-[70%] md:w-[65%] p-8 md:p-16 lg:p-24 xl:p-32">
-          <h2 className="text-base md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-0 md:mb-4">
-            Don’t get stuck; swap, <br />
-            convert with ease!
+          <h2 className="text-base md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-0 md:mb-4">
+            Unlock the Power of Easy Crypto Conversions
           </h2>
           <p className="text-[10px] md:text-base lg:text-lg xl:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut laboreUt enim ad minim veniam
+            Experience the simplicity of swapping and converting your crypto
+            assets without the complications.
           </p>
         </div>
 

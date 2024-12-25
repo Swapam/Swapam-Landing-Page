@@ -51,11 +51,15 @@ const Footer = () => {
             />
           </div>
 
-          <p className="text-white text-xs md:text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor Incididunt ut labore Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip{" "}
-          </p>
+          <div className="lg:max-w-[700px]">
+            <p className="text-white text-xs md:text-sm">
+              Swapam offers a seamless experience for anyone looking to convert
+              crypto to fiat, manage their assets, or pay bills with ease.
+              Whether you’re swapping crypto or paying for utilities, Swapam
+              combines convenience, speed, and security to meet all your
+              financial needs.
+            </p>
+          </div>
 
           <div className="mt-5 lg:mt-10 w-full flex items-center justify-center lg:justify-start gap-3">
             <Button
@@ -119,7 +123,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full border-t-[0.5px] border-t-white px-[5%] py-4 bg-darkBlue">
+      <div className="w-full border-t-[0.5px] border-t-gray-500 px-[5%] py-4 bg-darkBlue">
         <span className="text-left text-gray-300 text-xs md:text-sm font-normal">
           Swapam {new Date().getFullYear()}. All rights reserved
         </span>
