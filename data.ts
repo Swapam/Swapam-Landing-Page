@@ -242,3 +242,5 @@ export const socialMediaFooterLinks: ISocialMediaFooter = {
     { name: "TikTok", url: "/" },
   ],
 };
+
+export const appdata = { email: "swapamhq@gmail.com" };

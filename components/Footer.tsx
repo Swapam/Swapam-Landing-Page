@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./shared/Button";
-import { FooterData, socialMediaFooterLinks } from "@/data";
+import { appdata, FooterData, socialMediaFooterLinks } from "@/data";
 import Container from "./shared/ui/Container";
 import Instagram from "./icons/Instagram";
 import Twitter from "./icons/Twitter";
@@ -9,6 +9,7 @@ import Telegram from "./icons/Telegram";
 import WhatsApp from "./icons/Whatsapp";
 import Linkedin from "./icons/Linkedin";
 import TikTok from "./icons/TikTok";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   const getSocialIcon = (name: string) => {
@@ -59,6 +60,10 @@ const Footer = () => {
               combines convenience, speed, and security to meet all your
               financial needs.
             </p>
+            <div className="flex items-center my-6 lg:my-6 space-x-2">
+              <MdOutlineEmail size={18} color="white" />
+              <p className="text-white text-xs md:text-sm">{appdata.email}</p>
+            </div>
           </div>
 
           <div className="mt-5 lg:mt-10 w-full flex items-center justify-center lg:justify-start gap-3">
