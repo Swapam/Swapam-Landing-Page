@@ -79,7 +79,7 @@ const Hero = () => {
         </Container>
 
         <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center mt-10">
-          <div className="w-full flex items-center justify-center gap-3">
+          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-3">
             <Button
               title="Get on App Store"
               className={"bg-lightPurple"}
