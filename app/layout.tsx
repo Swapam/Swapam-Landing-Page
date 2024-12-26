@@ -6,7 +6,7 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 export const metadata = {
   metadataBase: "https://swapamnow.com",
   title: {
-    default: "Swapam",
+    default: "Swapam | Unlock the Future of Payments",
     template: "%s | Unlock the Future of Payments",
   },
   description: "Unlock the Future of Payments",
