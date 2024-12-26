@@ -38,7 +38,7 @@ const JoinUs = ({ imageUrl, title, description }: JoinUsProps) => {
   };
 
   return (
-    <div className="relative bg-white drop-shadow-lg flex items-center justify-center px-0 md:px-5 py-[5%]">
+    <div className="relative bg-white drop-shadow-lg hidden lg:flex items-center justify-center px-0 md:px-5 py-[5%]">
       <Image
         src="/join-us.svg"
         alt="Card Background"

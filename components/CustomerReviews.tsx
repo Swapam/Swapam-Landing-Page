@@ -97,7 +97,7 @@ const CustomerReviews = () => {
         </div>
 
         <div
-          className={`flex h-12 max-w-[350px] md:max-w-[450px] lg:max-w-[520px] absolute right-[5%] md:right-[5%] lg:right-[10%] xl:right-[10%] top-[70%] transition-transform duration-500 ease-in-out`}
+          className={`flex h-12 max-w-[80%] md:max-w-[450px] lg:max-w-[520px] absolute right-[5%] md:right-[5%] lg:right-[10%] xl:right-[10%] top-[70%] transition-transform duration-500 ease-in-out`}
           style={{ transform: `translateX(-${currentIndex * 3}%)` }}
         >
           <ReviewItem item={ReviewsData[currentIndex]} />
