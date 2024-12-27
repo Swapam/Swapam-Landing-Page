@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
+import Sidebar from "./shared/Sidebar";
 
 const Navbar = () => {
   const router = useRouter();
@@ -64,20 +65,11 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Navigation Links */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-16 right-0 left-0 bg-white transition duration-300 ease-in-out">
-          {navLinks.map((link, index) => (
-            <Link key={index} href={link.href}>
-              <p
-                className="block text-black text-sm lg:text-base py-2 px-4 text-center hover:text-accent transition duration-300 ease-in-out"
-                onClick={toggleMobileMenu}
-              >
-                {link.text}
-              </p>
-            </Link>
-          ))}
-        </div>
-      )}
+      <Sidebar
+        isOpen={isMobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        links={navLinks}
+      />
     </nav>
   );
 };

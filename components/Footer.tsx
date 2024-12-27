@@ -105,8 +105,8 @@ const Footer = () => {
               </div>
             </Container>
           ))}
-
-          <Container className="w-full  items-center justify-center">
+          {/** SOCIAL ICONS (DESKTOP ONLY) */}
+          <Container className="w-full hidden lg:block">
             <span className="font-semibold text-sm md:text-base">
               {socialMediaFooterLinks.title}
             </span>
@@ -126,6 +126,26 @@ const Footer = () => {
             </div>
           </Container>
         </div>
+        {/** SOCIAL ICONS (MOBILE ONLY) */}
+        <Container className="w-full flex flex-col items-center lg:hidden">
+          <span className="font-semibold text-sm md:text-base">
+            {socialMediaFooterLinks.title}
+          </span>
+
+          <div className="flex flex-wrap items-center mt-4 md:mt-7 gap-7">
+            {socialMediaFooterLinks.links.map((link, index) => (
+              <a
+                key={index}
+                className="flex items-center gap-3 text-white hover:text-teal-500 text-xs md:text-sm font-normal"
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {getSocialIcon(link.name)}
+              </a>
+            ))}
+          </div>
+        </Container>
       </div>
 
       <div className="w-full border-t-[0.5px] border-t-gray-500 px-[5%] py-4 bg-darkBlue">

@@ -75,7 +75,7 @@ export const FeaturesTwoData: IFeatureTwo[] = [
       "Sign up effortlessly and get your secure wallet. Access diverse features, including our crypto swap and off-ramp, utilities, and storing your assets securely.",
   },
   {
-    title: "Start Trading Instantly",
+    title: "Start Converting Instantly",
     subtitle:
       "Swap crypto assets, convert to fiat, or seamlessly pay utility bills. Enjoy fast processing and unmatched convenience on our powerful platform.",
   },
@@ -232,7 +232,7 @@ export const FooterData: IFooterSection[] = [
 
 // SocialMediaFooterLinks Type
 export const socialMediaFooterLinks: ISocialMediaFooter = {
-  title: "Socials",
+  title: "Connect with us",
   links: [
     { name: "Instagram", url: "/" },
     { name: "Twitter", url: "/" },

@@ -69,7 +69,7 @@ const FeaturesTwo = () => {
               className=""
             />
           </div>
-          <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center mt-40 md:mt-[45%] lg:mt-[28%]">
+          <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center  mt-10 md:mt-10">
             <div className="w-full flex items-center justify-center gap-3">
               <Button
                 title="App Store"
