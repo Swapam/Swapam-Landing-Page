@@ -237,7 +237,8 @@ export const socialMediaFooterLinks: ISocialMediaFooter = {
     { name: "Instagram", url: "https://www.instagram.com/swapamhq/" },
     { name: "Twitter", url: "https://x.com/swapamhq" },
     // { name: "Telegram", url: "/" },
-    // { name: "Whatsapp", url: "/" },
+    { name: "Whatsapp", url: "https://wa.me/2347081601461" },
+
     // { name: "LinkedIn", url: "/" },
     // { name: "TikTok", url: "/" },
   ],
