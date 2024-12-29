@@ -1,5 +1,5 @@
 "use client";
-import { appdata, privacyPolicySections } from "@/data";
+import { appdata } from "@/data";
 import React from "react";
 
 const PrivacyPolicy = () => {
