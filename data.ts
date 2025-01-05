@@ -245,4 +245,4 @@ export const socialMediaFooterLinks: ISocialMediaFooter = {
   ],
 };
 
-export const appdata = { email: "swapamhq@gmail.com" };
+export const appdata = { email: "support@swapamnow.com" };
