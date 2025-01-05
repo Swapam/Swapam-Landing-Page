@@ -235,9 +235,10 @@ export const socialMediaFooterLinks: ISocialMediaFooter = {
   title: "Connect with us",
   links: [
     { name: "Instagram", url: "https://www.instagram.com/swapamhq/" },
-    { name: "Twitter", url: "https://x.com/swapamhq" },
+    { name: "Twitter", url: "https://x.com/swapam_hq" },
+    { name: "Facebook", url: "https://www.facebook.com/swapamhq/" },
     // { name: "Telegram", url: "/" },
-    { name: "Whatsapp", url: "https://wa.me/2347081601461" },
+    { name: "Whatsapp", url: "https://wa.me/2349038428935" },
 
     // { name: "LinkedIn", url: "/" },
     // { name: "TikTok", url: "/" },

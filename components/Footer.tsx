@@ -10,6 +10,7 @@ import WhatsApp from "./icons/Whatsapp";
 import Linkedin from "./icons/Linkedin";
 import TikTok from "./icons/TikTok";
 import { MdOutlineEmail } from "react-icons/md";
+import Facebook from "./icons/Facebook";
 
 const Footer = () => {
   const getSocialIcon = (name: string) => {
@@ -18,6 +19,8 @@ const Footer = () => {
         return <Instagram className="w-8 h-8 lg:w-10 lg:h-8" />;
       case "twitter":
         return <Twitter className="w-8 h-8 lg:w-10 lg:h-8" />;
+      case "facebook":
+        return <Facebook className="w-8 h-8 lg:w-10 lg:h-8" />;
       case "telegram":
         return <Telegram className="w-8 h-8 lg:w-10 lg:h-8" />;
       case "whatsapp":
