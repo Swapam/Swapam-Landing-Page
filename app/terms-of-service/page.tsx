@@ -19,6 +19,19 @@ const TermsAndConditions = () => {
         </p>
 
         <section className="mt-8">
+          <h2 className="text-xl lg:text-2xl font-semibold text-black">Note</h2>
+          <p className="text-gray-700 mt-4 text-sm lg:text-base leading-6">
+            Only{" "}
+            <span className="text-black font-semibold">Manuchimso Oliver</span>{" "}
+            has the right to publish the iOS version of Swapam on Apple Store.
+            <br /> Only{" "}
+            <span className="text-black font-semibold">
+              Manuchimso Oliver
+            </span>{" "}
+            has the right to publish the iOS version of Swapam on Apple Store.
+          </p>
+        </section>
+        <section className="mt-8">
           <h2 className="text-xl lg:text-2xl font-semibold text-black">
             Introduction
           </h2>
@@ -66,6 +79,11 @@ const TermsAndConditions = () => {
           <h2 className="text-xl lg:text-2xl font-semibold text-black">
             Acceptable Use
           </h2>
+          <p className="text-gray-700 mt-4 text-sm lg:text-base leading-6">
+            Only{" "}
+            <span className="text-black font-semibold">Manuchimso Oliver</span>{" "}
+            has the right to publish the iOS version of Swapam on Apple Store.
+          </p>
           <p className="text-gray-700 mt-4 text-sm lg:text-base leading-6">
             You agree to use the Service only for lawful purposes and in
             accordance with these T&C. Prohibited activities include, but are
