@@ -15,7 +15,7 @@ const TermsAndConditions = () => {
         </h2>
 
         <p className="text-gray-700 mt-4 text-sm lg:text-base">
-          Last Updated: December 26, 2024
+          Last Updated: January 10, 2025
         </p>
 
         <section className="mt-8">
