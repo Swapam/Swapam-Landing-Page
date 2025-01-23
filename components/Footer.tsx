@@ -77,13 +77,18 @@ const Footer = () => {
               }
               image={"/apple.png"}
             />
-            <Button
-              title="Play Store"
-              image={"/playstore.png"}
-              className={
-                "bg-lightPurple w-full lg:w-auto flex items-center justify-center"
-              }
-            />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
+              className=""
+            >
+              <Button
+                title="Play Store"
+                image={"/playstore.png"}
+                className={
+                  "bg-lightPurple w-full lg:w-auto flex items-center justify-center"
+                }
+              />
+            </a>
           </div>
         </Container>
         <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-7 pr-3 lg:pr-7">

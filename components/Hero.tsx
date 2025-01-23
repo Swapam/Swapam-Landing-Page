@@ -41,11 +41,16 @@ const Hero = () => {
                 className={"bg-lightPurple"}
                 image={"/apple.png"}
               />
-              <Button
-                title="Get on Play Store"
-                image={"/playstore.png"}
-                className={"bg-lightPurple"}
-              />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
+                className=""
+              >
+                <Button
+                  title="Get on Play Store"
+                  image={"/playstore.png"}
+                  className={"bg-lightPurple"}
+                />
+              </a>
             </div>
 
             <Container delay={0.35} className="mt-[10%] flex gap-5">
@@ -85,11 +90,16 @@ const Hero = () => {
               className={"bg-lightPurple"}
               image={"/apple.png"}
             />
-            <Button
-              title="Get on Play Store"
-              image={"/playstore.png"}
-              className={"bg-lightPurple"}
-            />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
+              className=""
+            >
+              <Button
+                title="Get on Play Store"
+                image={"/playstore.png"}
+                className={"bg-lightPurple"}
+              />
+            </a>
           </div>
 
           <div className="mt-[10%] flex gap-5">

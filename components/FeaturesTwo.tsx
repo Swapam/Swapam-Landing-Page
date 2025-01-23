@@ -76,11 +76,16 @@ const FeaturesTwo = () => {
                 className={"bg-lightPurple"}
                 image={"/apple.png"}
               />
-              <Button
-                title="Play Store"
-                image={"/playstore.png"}
-                className={"bg-lightPurple"}
-              />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
+                className=""
+              >
+                <Button
+                  title="Play Store"
+                  image={"/playstore.png"}
+                  className={"bg-lightPurple"}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -97,11 +102,16 @@ const FeaturesTwo = () => {
                 className={"bg-darkBlue"}
                 image={"/apple.png"}
               />
-              <Button
-                title="Play Store"
-                image={"/playstore.png"}
-                className={"bg-darkBlue"}
-              />
+              <a
+                href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
+                className=""
+              >
+                <Button
+                  title="Play Store"
+                  image={"/playstore.png"}
+                  className={"bg-darkBlue"}
+                />
+              </a>
             </div>
           </div>
         </Container>
