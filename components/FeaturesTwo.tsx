@@ -70,7 +70,7 @@ const FeaturesTwo = () => {
             />
           </div>
           <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center  mt-10 md:mt-10">
-            <div className="w-full flex items-center justify-center gap-3">
+            <div className="w-full flex items-center justify-center gap-3 z-10">
               <Button
                 title="App Store"
                 className={"bg-lightPurple"}
@@ -79,6 +79,7 @@ const FeaturesTwo = () => {
               <a
                 href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
                 className=""
+                target="_blank"
               >
                 <Button
                   title="Play Store"
@@ -105,6 +106,7 @@ const FeaturesTwo = () => {
               <a
                 href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
                 className=""
+                target="_blank"
               >
                 <Button
                   title="Play Store"
