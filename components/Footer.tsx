@@ -70,13 +70,15 @@ const Footer = () => {
           </div>
 
           <div className="mt-5 lg:mt-10 w-full flex items-center justify-center lg:justify-start gap-3">
-            <Button
-              title="App Store"
-              className={
-                "bg-lightPurple w-full lg:w-auto flex items-center justify-center"
-              }
-              image={"/apple.png"}
-            />
+            <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+              <Button
+                title="App Store"
+                className={
+                  "bg-lightPurple w-full lg:w-auto flex items-center justify-center"
+                }
+                image={"/apple.png"}
+              />
+            </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
               className=""

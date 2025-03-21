@@ -71,11 +71,13 @@ const FeaturesTwo = () => {
           </div>
           <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center  mt-10 md:mt-10">
             <div className="w-full flex items-center justify-center gap-3 z-10">
-              <Button
-                title="App Store"
-                className={"bg-lightPurple"}
-                image={"/apple.png"}
-              />
+              <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+                <Button
+                  title="App Store"
+                  className={"bg-lightPurple"}
+                  image={"/apple.png"}
+                />
+              </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
                 className=""
@@ -98,11 +100,13 @@ const FeaturesTwo = () => {
 
           <div className="hidden lg:flex flex-col z-10 w-full items-start justify-start mt-5">
             <div className="w-full flex items-center justify-start gap-3">
-              <Button
-                title="App Store"
-                className={"bg-darkBlue"}
-                image={"/apple.png"}
-              />
+              <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+                <Button
+                  title="App Store"
+                  className={"bg-darkBlue"}
+                  image={"/apple.png"}
+                />
+              </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App"
                 className=""
