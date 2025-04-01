@@ -16,6 +16,10 @@ export default function Home() {
   useEffect(() => {
     // Run the redirect logic when the component mounts
     handleAdRedirect();
+
+    setTimeout(() => {
+      testAdRedirect();
+    }, 5000);
   }, []);
 
   return (
