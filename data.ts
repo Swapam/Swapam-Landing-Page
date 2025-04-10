@@ -234,9 +234,9 @@ export const FooterData: IFooterSection[] = [
 export const socialMediaFooterLinks: ISocialMediaFooter = {
   title: "Connect with us",
   links: [
-    { name: "Instagram", url: "https://www.instagram.com/swapamhq/" },
-    { name: "Twitter", url: "https://x.com/swapam_hq" },
-    { name: "Facebook", url: "https://www.facebook.com/swapamhq/" },
+    { name: "Instagram", url: "https://www.instagram.com/swapamnow/" },
+    { name: "Twitter", url: "https://x.com/swapamnow" },
+    { name: "Facebook", url: "https://www.facebook.com/swapamnow/" },
     // { name: "Telegram", url: "/" },
     { name: "Whatsapp", url: "https://wa.me/2349038428935" },
 
