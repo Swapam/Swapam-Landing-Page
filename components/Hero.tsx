@@ -36,7 +36,11 @@ const Hero = () => {
           </div>
           <div className="hidden lg:flex flex-col">
             <div className="w-full flex items-center justify-start gap-3">
-              <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+              <a
+                href="https://apps.apple.com/app/swapam/id6736902828"
+                className=""
+                target="_blank"
+              >
                 <Button
                   title="Get on App Store"
                   className={"bg-lightPurple"}
@@ -87,7 +91,11 @@ const Hero = () => {
 
         <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center mt-10">
           <div className="w-full flex flex-col md:flex-row items-center justify-center gap-3">
-            <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+            <a
+              href="https://apps.apple.com/app/swapam/id6736902828"
+              className=""
+              target="_blank"
+            >
               <Button
                 title="Get on App Store"
                 className={"bg-lightPurple"}

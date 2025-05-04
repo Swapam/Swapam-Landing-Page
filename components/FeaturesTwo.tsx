@@ -71,7 +71,11 @@ const FeaturesTwo = () => {
           </div>
           <div className="flex lg:hidden flex-col z-10 w-full items-center justify-center  mt-10 md:mt-10">
             <div className="w-full flex items-center justify-center gap-3 z-10">
-              <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+              <a
+                href="https://apps.apple.com/app/swapam/id6736902828"
+                className=""
+                target="_blank"
+              >
                 <Button
                   title="App Store"
                   className={"bg-lightPurple"}
@@ -100,7 +104,11 @@ const FeaturesTwo = () => {
 
           <div className="hidden lg:flex flex-col z-10 w-full items-start justify-start mt-5">
             <div className="w-full flex items-center justify-start gap-3">
-              <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+              <a
+                href="https://apps.apple.com/app/swapam/id6736902828"
+                className=""
+                target="_blank"
+              >
                 <Button
                   title="App Store"
                   className={"bg-darkBlue"}

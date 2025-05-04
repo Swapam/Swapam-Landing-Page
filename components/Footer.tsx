@@ -70,7 +70,11 @@ const Footer = () => {
           </div>
 
           <div className="mt-5 lg:mt-10 w-full flex items-center justify-center lg:justify-start gap-3">
-            <a href="https://bit.ly/4ivSLfh" className="" target="_blank">
+            <a
+              href="https://apps.apple.com/app/swapam/id6736902828"
+              className=""
+              target="_blank"
+            >
               <Button
                 title="App Store"
                 className={
