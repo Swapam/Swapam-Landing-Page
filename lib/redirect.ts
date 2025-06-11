@@ -60,7 +60,7 @@ export function getMobileOperatingSystem(): "iOS" | "Android" | "unknown" {
  * App store URLs
  */
 const APP_STORES = {
-  iOS: "",
+  iOS: "https://apps.apple.com/ng/app/swapam/id6736902828",
   Android:
     "https://play.google.com/store/apps/details?id=com.mxnuchim.Swapam_App&hl=en&pli=1",
 };
